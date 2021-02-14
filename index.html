@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0" />
+		<title>Voronoi Color Picker</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Voronoi Color Picker</h1>
+		<div class="slide container">
+			<input type="range" min="0" max="100" value="60" class="slider" id="saturationSlider"><br>
+			<label for="saturationField">Saturation</label>
+			<input type="text" id="saturationField" name="saturationField" value="60" size="3">
+		</div>
+		<canvas id="canvas" width="720" height="360"></canvas>
+		
+		<div class="color controls">
+			<table>
+			<tr>
+			<td><input type="range" min="0" max="360" value="60" class="slider" id="activeHueSlider"></td>
+			<td><input type="range" min="0" max="100" value="60" class="slider" id="activeSaturationSlider"></td>
+			<td><input type="range" min="0" max="100" value="60" class="slider" id="activeLightnessSlider"></td>
+			</tr>
+			<tr style="text-align:right">
+			<td><label for="activeHueField">Hue</label>
+			<input type="text" id="activeHueField" name="activeHueField" value="60" size="3"></td>
+			<td><label for="activeSaturationField">Saturation</label>
+			<input type="text" id="activeSaturationField" name="activeSaturationField" value="60" size="3"></td>
+			<td><label for="activeLightnessField">Lightness</label>
+			<input type="text" id="activeLightnessField" name="activeLightnessField" value="60" size="3"></td>
+			</tr>
+			</table>
+			
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
