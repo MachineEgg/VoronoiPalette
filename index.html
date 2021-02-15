@@ -18,22 +18,45 @@
 		
 		<div class="color controls">
 			<table>
+
+			<colgroup>
+    <col span="3">
+    <col width="72">
+  </colgroup>
+
 			<tr>
-			<td><input type="range" min="0" max="360" value="60" class="slider" id="activeHueSlider"></td>
-			<td><input type="range" min="0" max="100" value="60" class="slider" id="activeSaturationSlider"></td>
-			<td><input type="range" min="0" max="100" value="60" class="slider" id="activeLightnessSlider"></td>
+			<td><input type="range" min="0" max="360" value="0" class="slider" id="activeHueSlider"></td>
+			<td><input type="range" min="0" max="100" value="0" class="slider" id="activeSaturationSlider"></td>
+			<td><input type="range" min="0" max="100" value="0" class="slider" id="activeLightnessSlider"></td>
+			<td><button id="deleteButton" type="button">Delete</button></td>
 			</tr>
 			<tr style="text-align:right">
 			<td><label for="activeHueField">Hue</label>
-			<input type="text" id="activeHueField" name="activeHueField" value="60" size="3"></td>
+			<input type="text" id="activeHueField" name="activeHueField" value="0" size="3"></td>
 			<td><label for="activeSaturationField">Saturation</label>
-			<input type="text" id="activeSaturationField" name="activeSaturationField" value="60" size="3"></td>
+			<input type="text" id="activeSaturationField" name="activeSaturationField" value="0" size="3"></td>
 			<td><label for="activeLightnessField">Lightness</label>
-			<input type="text" id="activeLightnessField" name="activeLightnessField" value="60" size="3"></td>
+			<input type="text" id="activeLightnessField" name="activeLightnessField" value="0" size="3"></td>
+			<td id="activeHex" style="text-align:left"></td>
 			</tr>
 			</table>
-			<input type="button" id="delete" value="Delete">
+			
+
+
+			
+
+
 		</div>
+
+
+		<div id="colorTable">
+			
+
+		</div>
+		
 		<script src="script.js"></script>
+
+
+			
 	</body>
 </html>
